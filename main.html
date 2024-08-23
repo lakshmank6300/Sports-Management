@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Aditya University</title>
+	<style>
+		form{
+			margin: 50px;
+			width: 415px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		div{
+			margin: 20px;
+			font-size: 20px;
+		}
+		label{
+			display: inline-block;
+			width: 200px;
+			text-align: left;
+		}
+		input[type=submit],input[type=button]{
+			font-size: 20px;
+			padding: 7px 14px;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+	<h1>Aditya University</h1>
+	<h2>Remuniration Bill</h2>
+	<form action="printPage.html" method="get">
+		<div>
+			<label for="facultyname">Name of the faculty </label><input type="text" name="facultyname" id="faculty" >
+		</div>
+		<div>
+			<label>Designation</label>
+			<select id="designation" name="designation">
+                <option>select</option>
+				<option value="asc">associate professor</option>
+				<option value="pro">professor</option>
+				<option value="assist">assistant professor</option>
+			</select>
+		</div>
+		<div>
+			<label for="college">Name of the college </label>
+			<select id="college" name="college">
+                <option>select</option>
+				<option value="prag">Pragathi Eng. college</option>
+				<option value="bvc">BVC Eng. college</option>
+				<option value="vishnu">Vishnu Eng. college</option>
+				<option value="srkr">SRKR Eng. college</option>
+				<option value="kl">KL University</option>
+			</select>
+		</div>
+		<div>
+			<label>Purpose</label>
+			<select for="purpose" id="purpose" name="purpose">
+                <option>select</option>
+				<option value="paper">Paper valuation</option>
+				<option value="lab">Lab External</option>
+				<option value="viva">Project viva</option>
+			</select>
+		</div>
+		<div>
+			<label for="telephone">Telephone</label><input type="phone" name="telephone" id="phone" >
+		</div>
+		<div>
+			<label for="DateofDuty">Date of Duty</label><input type="date" name="DateofDuty" id="duty" >
+		</div>
+		<div>
+			<label for="DateofRelieving">Date of Relieving</label><input type="date" name="DateofRelieving" id="relieving" >
+		</div>
+		<div>
+			<label for="nostudents">Number of Students</label><input type="number" name="nostudents" id="nostudents" >
+		</div>
+		<div>
+			<label for="bankacc">Bank Account</label><input type="number" name="bankacc" id="bankacc" >
+		</div>
+		<div>
+			<label for="ifsc">IFSC code</label><input type="text" name="ifsc" id="ifsc" >
+		</div>
+		<div>
+			<input type="button" name="button" value="Amount Details" onclick="getdetails()">
+			<input type="submit" name="submit" value="submit" >
+		</div>
+	</form>
+	<div>
+		<p id="ad"></p>
+	</div>
+</center>
+</body>
+<script type="text/javascript" src="main.js"></script>
+</html>

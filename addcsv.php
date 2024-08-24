@@ -12,7 +12,7 @@ $DateofRelieving = $_POST['DateofRelieving'];
 $nostudents = $_POST['nostudents'];
 $bankacc = $_POST['bankacc'];
 $ifsc = $_POST['ifsc'];
-
+echo $ifsc;
 // Open the CSV file in append mode
 $fp = fopen('data.csv', 'a');
 
